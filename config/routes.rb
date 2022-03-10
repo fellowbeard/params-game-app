@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   
-  get "/params_game" => "params_examples#query_params""
+  get "/params_game" => "params#query_params"
 
 end
