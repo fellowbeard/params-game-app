@@ -4,8 +4,8 @@ class GamesController < ApplicationController
 
     user_given_name = params["my_name"].upcase
 
-    if user_given_name[0] == ("B")
-      output_message = "Hey! Your name starts with B."
+    if user_given_name.starts_with?("A")
+      output_message = "Hey! Your name starts with A."
     else
       output_message = "Cool beans."
     end
